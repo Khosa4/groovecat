@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'android-release-key'
+            keyPassword 'musik5'
+            storeFile file('groovecat-keystore.jks')
+            storePassword 'musik5'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        applicationId "de.groovecat.client"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+        resourcePackageName "de.groovecat.client"
+    }
+}
+
+def AAVersion = '3.0.1'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    //Android Annotations
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    //Google Play Services
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    //Facebook sdk
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+    //JavaRx
+    compile 'io.reactivex:rxjava:1.1.3'
+}

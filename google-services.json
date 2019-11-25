@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "84350778874",
+    "project_id": "firebase-groovecat"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84350778874:android:cf277bd20901ea3b",
+        "android_client_info": {
+          "package_name": "de.groovecat.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84350778874-ig9gk4485h5867id4bmkr96omoiviv5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.groovecat.client",
+            "certificate_hash": "9AD9EA5197AAC4D5C21A589291CA01C3B8A4F1D7"
+          }
+        },
+        {
+          "client_id": "84350778874-3bl1f930282j4vj01261hq47m5csljnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjePVQIsbIB6MlfBKe6xdpKMIcWwYu2xw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

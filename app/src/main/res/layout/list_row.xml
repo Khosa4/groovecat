@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightPrimary"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tv_userprofile"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:src="@drawable/blankimage"
+
+
+        />
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="8dip"-->
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryText"
+        android:text="Username"/>
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_toRightOf="@id/imageView"-->
+
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/primaryText"
+        android:id="@+id/tv_notification_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Notification Detail"/>
+
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_below="@id/heading"-->
+        <!--android:layout_marginTop="5dip"-->
+        <!--android:layout_toRightOf="@id/imageView"-->
+
+
+
+</LinearLayout>
